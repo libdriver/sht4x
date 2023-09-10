@@ -33,7 +33,7 @@ LibDriver SHT4X is the full function driver of SHT4X launched by LibDriver.It pr
 
 /example includes LibDriver SHT4X sample code.
 
-/doc includes LibDriver SHT4X1 offline document.
+/doc includes LibDriver SHT4X offline document.
 
 /datasheet includes SHT4X datasheet.
 
