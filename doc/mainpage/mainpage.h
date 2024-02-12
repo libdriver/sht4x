@@ -1,6 +1,6 @@
 /**
  * @mainpage  LibDriver SHT4X
- * @brief     libdriver sht4x is a full function driver of sht4x and it can run in both MCU and Linux platform.
+ * @brief     LibDriver SHT4X is a full function driver of SHT4X and it can run in both MCU and Linux platform.
  * @version   1.0.0
  * @author    Shifeng Li
  *
