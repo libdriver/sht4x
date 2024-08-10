@@ -8,9 +8,9 @@
 
 [![MISRA](https://img.shields.io/badge/misra-compliant-brightgreen.svg)](/misra/README.md) [![API](https://img.shields.io/badge/api-reference-blue.svg)](https://www.libdriver.com/docs/sht4x/index.html) [![License](https://img.shields.io/badge/license-MIT-brightgreen.svg)](/LICENSE)
 
-SHT4X是一個數位感測器平臺，用於量測不同精度等級的相對濕度和溫度。 它的I2C介面提供了幾個預配寘的I2C地址，同時保持了超低的功率預算（0.4 μ W）。 功率調整的內部加熱器可以在三個加熱級別下使用，從而使感測器能够在苛刻的環境中工作。 四引脚雙扁平引線封裝適用於表面安裝科技（SMT）處理，包括可選的封裝上專利PTFE膜或可拆卸的保護蓋。 提供符合ISO17025的感測器特定校準證書，可通過唯一序號進行識別。
+SHT4X是一個數位感測器平臺，用於量測不同精度等級的相對濕度和溫度。 它的I2C介面提供了幾個預配寘的I2C地址，同時保持了超低的功率預算（0.4μW）。 功率調整的內部加熱器可以在三個加熱級別下使用，從而使感測器能够在苛刻的環境中工作。 四引脚雙扁平引線封裝適用於表面安裝科技（SMT）處理，包括可選的封裝上專利PTFE膜或可拆卸的保護蓋。 提供符合ISO17025的感測器特定校準證書，可通過唯一序號進行識別。
 
-LibDriver SHT4X是LibDriver推出的SHT4X全功能驅動程序，提供溫濕度讀取和序號讀取功能。 LibDriver符合MISRA。
+LibDriver SHT4X是LibDriver推出的SHT4X全功能驅動程序，提供溫濕度讀取和序號讀取功能等功能並且它符合MISRA標準。
 
 ### 目錄
 
