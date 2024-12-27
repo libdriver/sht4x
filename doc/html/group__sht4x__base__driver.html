@@ -287,7 +287,7 @@ Functions</h2></td></tr>
 <p>close the chip </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an sht4x handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an sht4x handle structure </td></tr>
   </table>
   </dd>
 </dl>
@@ -334,8 +334,8 @@ Functions</h2></td></tr>
 <p>get the iic address </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an sht4x handle structure </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*addr</td><td>points to a chip iic address buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an sht4x handle structure </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*addr</td><td>pointer to a chip iic address buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -380,8 +380,8 @@ Functions</h2></td></tr>
 <p>get serial number </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an sht4x handle structure </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*num</td><td>points to a number buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an sht4x handle structure </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*num</td><td>pointer to a number buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -418,7 +418,7 @@ Functions</h2></td></tr>
 <p>get chip's information </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">*info</td><td>points to an sht4x info structure </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*info</td><td>pointer to an sht4x info structure </td></tr>
   </table>
   </dd>
 </dl>
@@ -452,7 +452,7 @@ Functions</h2></td></tr>
 <p>initialize the chip </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an sht4x handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an sht4x handle structure </td></tr>
   </table>
   </dd>
 </dl>
@@ -523,12 +523,12 @@ Functions</h2></td></tr>
 <p>read temperature and humidity </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an sht4x handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">mode</td><td>is the read mode </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*temperature_raw</td><td>points to a raw temperature buffer </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*temperature_s</td><td>points to a converted temperature buffer </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*humidity_raw</td><td>points to a raw humidity buffer </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*humidity_s</td><td>points to a converted humidity buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an sht4x handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">mode</td><td>read mode </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*temperature_raw</td><td>pointer to a raw temperature buffer </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*temperature_s</td><td>pointer to a converted temperature buffer </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*humidity_raw</td><td>pointer to a raw humidity buffer </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*humidity_s</td><td>pointer to a converted humidity buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -575,8 +575,8 @@ Functions</h2></td></tr>
 <p>set the iic address </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an sht4x handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">addr</td><td>is the chip iic address </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an sht4x handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">addr</td><td>chip iic address </td></tr>
   </table>
   </dd>
 </dl>
@@ -611,7 +611,7 @@ Functions</h2></td></tr>
 <p>soft reset the chip </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an sht4x handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an sht4x handle structure </td></tr>
   </table>
   </dd>
 </dl>

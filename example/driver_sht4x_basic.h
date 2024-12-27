@@ -57,7 +57,7 @@ extern "C"{
 
 /**
  * @brief     basic example init
- * @param[in] addr is the iic device address
+ * @param[in] addr iic device address
  * @return    status code
  *            - 0 success
  *            - 1 init failed
@@ -76,7 +76,7 @@ uint8_t sht4x_basic_deinit(void);
 
 /**
  * @brief      basic example get serial number
- * @param[out] *num points to a number buffer
+ * @param[out] *num pointer to a number buffer
  * @return     status code
  *             - 0 success
  *             - 1 get serial number failed
@@ -86,8 +86,8 @@ uint8_t sht4x_basic_get_serial_number(uint8_t num[4]);
 
 /**
  * @brief      basic example read
- * @param[out] *temperature points to a converted temperature buffer
- * @param[out] *humidity points to a converted humidity buffer
+ * @param[out] *temperature pointer to a converted temperature buffer
+ * @param[out] *humidity pointer to a converted humidity buffer
  * @return     status code
  *             - 0 success
  *             - 1 read failed
