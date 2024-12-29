@@ -56,11 +56,11 @@
 
 /**
  * @brief      write and read bytes
- * @param[in]  *handle points to an sht4x handle structure
- * @param[in]  cmd is the send command
- * @param[in]  delay is the delay in ms
- * @param[out] *data points to a data buffer
- * @param[in]  len is the data length
+ * @param[in]  *handle pointer to an sht4x handle structure
+ * @param[in]  cmd sent command
+ * @param[in]  delay delay in ms
+ * @param[out] *data pointer to a data buffer
+ * @param[in]  len data length
  * @return     status code
  *             - 0 success
  *             - 1 write read failed
@@ -89,8 +89,8 @@ static uint8_t a_sht4x_write_read(sht4x_handle_t *handle, uint8_t cmd, uint16_t 
 
 /**
  * @brief     calculate the crc
- * @param[in] *data points to a data buffer
- * @param[in] len is the data length
+ * @param[in] *data pointer to a data buffer
+ * @param[in] len data length
  * @return    crc
  * @note      none
  */
@@ -115,7 +115,7 @@ static uint8_t a_sht4x_crc(uint8_t *data, uint16_t len)
 
 /**
  * @brief     initialize the chip
- * @param[in] *handle points to an sht4x handle structure
+ * @param[in] *handle pointer to an sht4x handle structure
  * @return    status code
  *            - 0 success
  *            - 1 iic initialization failed
@@ -189,7 +189,7 @@ uint8_t sht4x_init(sht4x_handle_t *handle)
 
 /**
  * @brief     close the chip
- * @param[in] *handle points to an sht4x handle structure
+ * @param[in] *handle pointer to an sht4x handle structure
  * @return    status code
  *            - 0 success
  *            - 1 iic deinit failed
@@ -232,8 +232,8 @@ uint8_t sht4x_deinit(sht4x_handle_t *handle)
 
 /**
  * @brief     set the iic address
- * @param[in] *handle points to an sht4x handle structure
- * @param[in] addr is the chip iic address
+ * @param[in] *handle pointer to an sht4x handle structure
+ * @param[in] addr chip iic address
  * @return    status code
  *            - 0 success
  *            - 1 set addr failed
@@ -254,8 +254,8 @@ uint8_t sht4x_set_addr(sht4x_handle_t *handle, sht4x_address_t addr)
 
 /**
  * @brief      get the iic address
- * @param[in]  *handle points to an sht4x handle structure
- * @param[out] *addr points to a chip iic address buffer
+ * @param[in]  *handle pointer to an sht4x handle structure
+ * @param[out] *addr pointer to a chip iic address buffer
  * @return      status code
  *              - 0 success
  *              - 1 get addr failed
@@ -276,12 +276,12 @@ uint8_t sht4x_get_addr(sht4x_handle_t *handle, sht4x_address_t *addr)
 
 /**
  * @brief      read temperature and humidity
- * @param[in]  *handle points to an sht4x handle structure
- * @param[in]  mode is the read mode
- * @param[out] *temperature_raw points to a raw temperature buffer
- * @param[out] *temperature_s points to a converted temperature buffer
- * @param[out] *humidity_raw points to a raw humidity buffer
- * @param[out] *humidity_s points to a converted humidity buffer
+ * @param[in]  *handle pointer to an sht4x handle structure
+ * @param[in]  mode read mode
+ * @param[out] *temperature_raw pointer to a raw temperature buffer
+ * @param[out] *temperature_s pointer to a converted temperature buffer
+ * @param[out] *humidity_raw pointer to a raw humidity buffer
+ * @param[out] *humidity_s pointer to a converted humidity buffer
  * @return     status code
  *             - 0 success
  *             - 1 read failed
@@ -463,8 +463,8 @@ uint8_t sht4x_read(sht4x_handle_t *handle, sht4x_mode_t mode,
 
 /**
  * @brief      get serial number
- * @param[in]  *handle points to an sht4x handle structure
- * @param[out] *num points to a number buffer
+ * @param[in]  *handle pointer to an sht4x handle structure
+ * @param[out] *num pointer to a number buffer
  * @return     status code
  *             - 0 success
  *             - 1 get serial number failed
@@ -518,7 +518,7 @@ uint8_t sht4x_get_serial_number(sht4x_handle_t *handle, uint8_t num[4])
 
 /**
  * @brief     soft reset the chip
- * @param[in] *handle points to an sht4x handle structure
+ * @param[in] *handle pointer to an sht4x handle structure
  * @return    status code
  *            - 0 success
  *            - 1 soft reset failed
@@ -553,11 +553,11 @@ uint8_t sht4x_soft_reset(sht4x_handle_t *handle)
 
 /**
  * @brief      write and read bytes
- * @param[in]  *handle points to an sht4x handle structure
- * @param[in]  cmd is the send command
- * @param[in]  delay_ms is the delay in ms
- * @param[out] *data points to a data buffer
- * @param[in]  len is the data length
+ * @param[in]  *handle pointer to an sht4x handle structure
+ * @param[in]  cmd sent command
+ * @param[in]  delay_ms delay in ms
+ * @param[out] *data pointer to a data buffer
+ * @param[in]  len data length
  * @return     status code
  *             - 0 success
  *             - 1 write read failed
@@ -579,7 +579,7 @@ uint8_t sht4x_write_read(sht4x_handle_t *handle, uint8_t cmd, uint16_t delay_ms,
 
 /**
  * @brief      get chip's information
- * @param[out] *info points to an sht4x info structure
+ * @param[out] *info pointer to an sht4x info structure
  * @return     status code
  *             - 0 success
  *             - 2 handle is NULL
