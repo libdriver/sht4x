@@ -457,6 +457,14 @@ uint8_t sht4x_read(sht4x_handle_t *handle, sht4x_mode_t mode,
     *humidity_raw = (uint16_t)((((uint16_t)buf[3]) << 8) | buf[4]);                           /* get raw humidity */
     *temperature_s = (float)(*temperature_raw) / 65535.0f * 175.0f - 45.0f;                   /* convert raw temperature */
     *humidity_s = (((float)(*humidity_raw) / 65535.0f) * 125.0f - 6.0f);                      /* convert raw humidity */
+    if ((*humidity_s) > 100.0f)                                                               /* check humidity range */
+    {
+        *humidity_s = 100.0f;                                                                 /* max humidity is 100% */
+    }
+    if ((*humidity_s) < 0.0f)                                                                 /* check humidity range */
+    {
+        *humidity_s = 0.0f;                                                                   /* min humidity is 0% */
+    }
     
     return 0;                                                                                 /* success return 0 */
 }
