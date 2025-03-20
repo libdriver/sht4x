@@ -1,3 +1,9 @@
+## 1.0.5 (2025-03-20)
+
+## Bug Fixes
+
+- fix humidity range bugs
+
 ## 1.0.4 (2025-03-15)
 
 ## Bug Fixes
