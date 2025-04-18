@@ -10,7 +10,7 @@
 
 SHT4X is a digital sensor platform for measuring relative humidity and temperature at different accuracy classes. Its I2C interface provides several preconfigured I2C addresses while maintaining an ultra-low power budget (0.4 μW). The power-trimmed internal heater can be used at three heating levels thus enabling sensor operation in demanding environments. The four-pin dual-flatno-leads package is suitable for surface mount technology (SMT) processing and comprises an optional on-package patented PTFE membrane or a removable protective cover. Sensor specific calibration certificates according to ISO17025, identifiable through unique serial number, are available.
 
-LibDriver SHT4X is the full function driver of SHT4X launched by LibDriver.It provides functions of temperature and humidity reading and serial number reading. LibDriver is MISRA compliant.
+LibDriver SHT4X is a full-featured driver of SHT4X launched by LibDriver.It provides functions of temperature and humidity reading and serial number reading. LibDriver is MISRA compliant.
 
 ### Table of Contents
 
