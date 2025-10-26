@@ -105,7 +105,7 @@ find_package(sht4x REQUIRED)
    sht4x (-e read | --example=read) [--addr=<0 | 1 | 2>] [--times=<num>]
    ```
 
-7. Run sht4x number function.
+6. Run sht4x number function.
 
    ```shell
    sht4x (-e number | --example=number) [--addr=<0 | 1 | 2>]
