@@ -70,7 +70,7 @@ We use '\n' to wrap lines.If your serial port assistant displays exceptions (e.g
    sht4x (-e read | --example=read) [--addr=<0 | 1 | 2>] [--times=<num>]
    ```
 
-7. Run sht4x number function.
+6. Run sht4x number function.
 
    ```shell
    sht4x (-e number | --example=number) [--addr=<0 | 1 | 2>]
